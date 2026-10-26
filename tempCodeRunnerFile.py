@@ -1,8 +1,12 @@
 
-a=[10,20,30,10,40,7]
-b=[10,20,30,10,40,7]
+import numpy as np
+import matplotlib.pyplot as plt
 
-number= list(zip(a,b))
-print(number)
-number=list(enumerate(b, start=1))
-print(number)
+
+x=np.array ([100,200,300,400,500,600])
+
+plt.hist(x,bins=10)
+plt.title("Histogram")
+plt.xlabel("Values")
+plt.ylabel("Frequency")
+plt.show()
